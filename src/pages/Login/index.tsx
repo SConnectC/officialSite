@@ -1,20 +1,19 @@
+import { Atomo } from "../../assets/svgs/atomo";
+
 import * as S from "./styles";
 
-import Atomo from "../../assets/atomo.png";
-import Logo from "../../assets/logoSmart.png"
+import Logo from "../../assets/imgs/logo.png";
 
 const Login = () => {
   return (
     <S.Container>
+      <S.BackMain></S.BackMain>
       <S.Main>
         <S.LeftView>
-          <img src={Atomo} width={380} height={440} alt="Atomo" />
+          <Atomo />
         </S.LeftView>
         <S.RightView>
-          <img src={Logo} width={232} height={130} alt="Logo Smart Connect Company"/>
-          <S.MainForm>
-            
-          </S.MainForm>
+          <img src={Logo} width={232} height={130} alt="Logo Smart Connect" />
         </S.RightView>
       </S.Main>
     </S.Container>
