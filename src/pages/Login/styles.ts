@@ -47,7 +47,7 @@ export const Main = styled.div`
   margin: 0 auto;
 
   border-radius: 28px;
-  background: ${Theme.colors.backgroundOpacity};
+  background: ${Theme.colors.backgroundOpacity100};
 `;
 
 export const LeftView = styled.div`
@@ -58,23 +58,26 @@ export const LeftView = styled.div`
   width: 50%;
   height: 100%;
 
-  background: ${Theme.colors.backgroundOpacity};
+  background: ${Theme.colors.backgroundOpacity100};
   border-top-left-radius: 28px;
   border-bottom-left-radius: 28px;
 `;
 
 export const RightView = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
   width: 50%;
   height: 100%;
 
-  text-align: center;
-
   background-color: ${Theme.colors.background};
   border-top-right-radius: 28px;
   border-bottom-right-radius: 28px;
+
+  img {
+    margin: 0 auto;
+  }
 
 `;
 
@@ -85,6 +88,12 @@ export const MainForm = styled.form`
 
   width: 100%;
   height: 100%;
+  
+  .containerInput {
+    width: 300px;
+    height: 80px;
 
-  padding: 4px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
 `;
