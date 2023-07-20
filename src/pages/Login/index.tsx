@@ -1,9 +1,12 @@
+import { Envelope, UserCircle } from '@phosphor-icons/react'
+
+import { InputComponent } from "../../components/Input";
+
+import Logo from '../../assets/imgs/logo.png'
+
 import { Atomo } from "../../assets/svgs/atomo";
 
 import * as S from "./styles";
-
-import Logo from "../../assets/imgs/logo.png";
-import { InputComponent } from "../../components/Input";
 
 const Login = () => {
   return (
@@ -14,7 +17,7 @@ const Login = () => {
           <Atomo />
         </S.LeftView>
         <S.RightView>
-          <img src={Logo} width={232} height={130} alt="Logo Smart Connect" />
+          <img src={Logo} width={232} height={130} alt='Logo Smart Connect'/>
           <S.MainForm>
             <div className="containerInput">
               <InputComponent
@@ -22,6 +25,7 @@ const Login = () => {
                 id="email"
                 placeholder="E-mail"
                 label="E-mail"
+                icon={<Envelope className='icon'/>}
               />
             </div>
             <div className="containerInput">
@@ -30,6 +34,7 @@ const Login = () => {
                 id="passwprd"
                 placeholder="Senha"
                 label="Senha"
+                icon={<UserCircle className='icon'/>}
               />
             </div>
           </S.MainForm>

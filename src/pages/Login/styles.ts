@@ -95,5 +95,10 @@ export const MainForm = styled.form`
 
     margin: 0 auto;
     margin-bottom: 24px;
+
+    .icon {
+      font-size: 32px;
+      color: ${Theme.colors.segundary}
+    }
   }
 `;

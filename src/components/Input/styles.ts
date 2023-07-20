@@ -27,12 +27,13 @@ export const InputLabel = styled.div`
 
     padding: 8px 12px;
 
-    background-color: ${Theme.colors.backgroundOpacity50};
-
     border: none;
     border-radius: 6px;
 
+    background-color: transparent;
+    
     ::placeholder {
+      font-size: 16px;
       color: ${Theme.colors.gray100}
     }
   }
@@ -46,5 +47,9 @@ export const InputIcon = styled.div`
   width: 100%;
   height: 100%;
 
+  padding: 8px 14px;
+
   background-color: ${Theme.colors.backgroundOpacity50};
+
+  border-radius: 6px;
 `;

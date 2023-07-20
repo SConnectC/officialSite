@@ -11,6 +11,7 @@ export const InputComponent: FC<InputComponentProps> = (props) => {
         <label>{props.label}</label>
         {props.icon ? (
           <S.InputIcon>
+            {props.icon}
             <input {...props} />
           </S.InputIcon>
         ) : (
